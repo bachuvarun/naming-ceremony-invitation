@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naming Ceremony Invitation</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Welcome to Our Naming Ceremony</h1>
+      <p>We are delighted to invite you to celebrate this special occasion with us!</p>
+    </header>
+
+    <section class="details">
+      <h2>Event Details</h2>
+      <p><strong>Date:</strong> February 20, 2025</p>
+      <p><strong>Time:</strong> 10:00 AM</p>
+      <p><strong>Location:</strong> 123 Celebration Hall, City, Country</p>
+    </section>
+
+    <section class="countdown">
+      <h2>Countdown to Name Reveal</h2>
+      <div id="timer">
+        <span id="days">00</span> Days
+        <span id="hours">00</span> Hours
+        <span id="minutes">00</span> Minutes
+        <span id="seconds">00</span> Seconds
+      </div>
+    </section>
+
+    <section class="name-reveal" id="nameReveal">
+      <h2>The Name Is...</h2>
+      <p id="revealedName" class="hidden">[Name Will Be Revealed Here]</p>
+    </section>
+
+    <button id="musicToggle" onclick="toggleMusic()">Play/Pause Music</button>
+  </div>
+
+  <audio autoplay loop id="backgroundMusic">
+    <source src="music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
